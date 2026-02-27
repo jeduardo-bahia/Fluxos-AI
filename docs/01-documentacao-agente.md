@@ -1,4 +1,4 @@
-# 🧩 CASO DE USO: CASHFLOW INSIGHT AI
+# 🧩 CASO DE USO: FLUXOS AI
 
 ---
 
@@ -41,7 +41,7 @@ O agente analisa automaticamente um arquivo CSV e executa as seguintes etapas:
 ## 🗣️ PERSONA E TOM DE VOZ
 
 ### 🏷️ Nome do Agente
-**CashFlow Insight AI**
+**Fluxos Insight AI**
 
 ### 🧠 Personalidade
 * **Consultivo:** Age como um parceiro de negócios.

@@ -5,8 +5,8 @@ class ReportGenerator:
         entradas = resumo["total_entradas"]
         saidas = resumo["total_saidas"]
         saldo = resumo["saldo"]
-        categoria, valor_categoria, percentual = resumo["maior_categoria"]
-
+        maior_categoria = resumo.get("maior_categoria", "N/A")
+        valor_maior = resumo.get("valor_maior_categoria", 0)
 
         status = "positivo ✅" if saldo >= 0 else "negativo ⚠️"
 
@@ -14,15 +14,15 @@ class ReportGenerator:
 ===== RELATÓRIO FINANCEIRO =====
 
 Total de Entradas: R$ {entradas:.2f}
-Total de Saídas: R$ {saidas:.2f}
-Saldo Final: R$ {saldo:.2f} ({status})
+Total de Saídas:   R$ {saidas:.2f}
+Saldo Final:       R$ {saldo:.2f} ({status})
 
 Categoria com maior impacto nas despesas:
-- {categoria} → R$ {valor_categoria:.2f} ({percentual:.1f}% do total de gastos)
+- {maior_categoria} → R$ {valor_maior:.2f}
 
 Análise:
 Seu saldo está {status}.
-A categoria que mais impacta seu orçamento é '{categoria}'.
+A categoria que mais impacta seu orçamento é '{maior_categoria}'.
 Recomenda-se revisar despesas relacionadas a essa categoria para otimizar seu fluxo de caixa.
 
 =================================

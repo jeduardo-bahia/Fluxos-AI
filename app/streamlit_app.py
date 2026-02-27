@@ -37,11 +37,6 @@ h1 {
     font-weight: 700;
 }
 
-/* Subtítulo */
-.css-1aumxhk {
-    text-align: center;
-}
-
 /* Cards métricas */
 div[data-testid="metric-container"] {
     background-color: #161B22;
@@ -123,24 +118,19 @@ if uploaded_file:
     )
 
     fig.update_layout(
-    plot_bgcolor="#161B22",
-    paper_bgcolor="#161B22",
-    font=dict(
-        color="white",
-        size=14
-    ),
-    xaxis=dict(
-        title_font=dict(color="white"),
-        tickfont=dict(color="white")
-    ),
-    yaxis=dict(
-        title_font=dict(color="white"),
-        tickfont=dict(color="white")
-    ),
-    legend=dict(
-        font=dict(color="white")
+        plot_bgcolor="#161B22",
+        paper_bgcolor="#161B22",
+        font=dict(color="white", size=14),
+        xaxis=dict(
+            title_font=dict(color="white"),
+            tickfont=dict(color="white")
+        ),
+        yaxis=dict(
+            title_font=dict(color="white"),
+            tickfont=dict(color="white")
+        ),
+        legend=dict(font=dict(color="white"))
     )
-)
 
     st.plotly_chart(fig, use_container_width=True)
 

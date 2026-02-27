@@ -6,7 +6,6 @@ class FinancialAnalyzer:
         self.df.columns = self.df.columns.str.lower()
         self.df["valor"] = pd.to_numeric(self.df["valor"], errors="coerce").fillna(0)
 
-        # Normaliza texto
         self.df["tipo"] = self.df["tipo"].str.lower().str.strip()
         self.df["categoria"] = self.df["categoria"].str.lower().str.strip()
 
@@ -58,7 +57,7 @@ class FinancialAnalyzer:
             "menor_categoria": menor_cat,
             "valor_menor_categoria": valor_menor
         }
-    
+
     def menor_categoria(self):
         despesas = self.df[self.df["tipo"] == "saida"]
 
