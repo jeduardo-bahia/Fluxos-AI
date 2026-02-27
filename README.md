@@ -1,6 +1,16 @@
-# Fluxos AI
+![Status](https://img.shields.io/badge/status-completo-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?logo=streamlit)
+![Ollama](https://img.shields.io/badge/Ollama-Llama3-black?logo=ollama)
+![License](https://img.shields.io/badge/licença-educacional-lightgrey)
+![Bootcamp](https://img.shields.io/badge/Bootcamp-Bradesco-blue)
+![IA Local](https://img.shields.io/badge/IA-local-purple?logo=ai)
+![Pandas](https://img.shields.io/badge/Pandas-data-150458?logo=pandas)
+![Plotly](https://img.shields.io/badge/Plotly-charts-3F4F75?logo=plotly)
 
 ![Banner](assets/banner_fluxosai.png)
+
+# Fluxos AI
 
 > Assistente inteligente de análise de fluxo de caixa com IA local (Ollama/Llama3).  
 > Projeto desenvolvido no **Bootcamp GenAI & Dados – Bradesco**.
